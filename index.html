@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link  rel="stylesheet" href="/profile-card/style.css">
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="profile-card">
+        <div class="image">
+            <img src="/profile-card/profile-picture.jpg" alt="" class="profile-img" data-testid="profilePicture">
+        </div>
+
+        <div class="text-data">
+            <span class="name" data-testid="fullName">Jefferson Uche-Okoro</span>
+            <span class="job" data-testid="jobTitle">Front end Developer</span>
+            <p class="shortBio" data-testid="shortBio">Passionate about building seamless and engaging web applications. Skilled in Angular, TypeScript, and JavaScript.
+            Always learning and improving!
+            </p>
+            <span class="emailAddress" data-testid="emailAddress">ucheokorojefferson@gmail.com</span>
+            <span class="currentLocation" data-testid="currentLocation">Lagos, Nigeria</span>
+            <span id="utc-time" class="currentTimeUTC"  data-testid="currentTimeUTC">Loading</span>
+        </div>
+
+        <div class="media-buttons" data-testid="socialLinks">
+            <a href="#" style="background: #4267b2" class="link"> <i class="bx bxl-facebook"></i>
+            </a>
+            <a href="#" style="background: #1da1f2" class="link">
+                <i class="bx bxl-twitter"></i>
+            </a>
+            <a href="#" style="background: #e1306c" class="link">
+                <i class="bx bxl-instagram"></i>
+            </a>
+            <a href="#" style="background: #ff0000" class="link">
+                <i class="bx bxl-youtube"></i>
+            </a>    
+        </div>
+
+        <div class="buttons">
+            <button onclick="showMessage()" class="button">Subscribe</button>
+            <button onclick="showMessage()" class="button">Message</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
